@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">mobileApp3</string>
+    <string name="a_button_that_shows_contact_list">A button that shows contact list</string>
+    <string name="an_image_that_shows_a_map">An image that shows a map</string>
+    <string name="an_image_that_shows_settings">An image that shows settings</string>
 </resources>
