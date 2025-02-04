@@ -3,4 +3,6 @@
     <string name="a_button_that_shows_contact_list">A button that shows contact list</string>
     <string name="an_image_that_shows_a_map">An image that shows a map</string>
     <string name="an_image_that_shows_settings">An image that shows settings</string>
+    <string name="togglebutton">ToggleButton</string>
+    <string name="save">Save</string>
 </resources>
