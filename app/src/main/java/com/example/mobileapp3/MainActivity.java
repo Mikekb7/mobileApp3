@@ -29,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
         intiListButton();
         initMapButton();
         initSettingsButton();
+        initToggleButton();
+        setForEditing(false);
     }
 
     private void intiListButton(){
