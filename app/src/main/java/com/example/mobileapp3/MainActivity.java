@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
 
     @Override
     public void didFinishDatePickerDialog(Calendar selectedTime) {
-        TextView birthday = findViewById(R.id.textBday);
+        TextView birthday = findViewById(R.id.textDate);
         birthday.setText(DateFormat.format("MM/dd/yyyy", selectedTime));
     }
 
