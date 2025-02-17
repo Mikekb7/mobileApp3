@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class ContactDataSource {
     private SQLiteDatabase database;
@@ -80,6 +81,28 @@ public class ContactDataSource {
         return lastId;
 
     }
+
+    public ArrayList<String> getConatctName(){
+        ArrayList<String> contactNames = new ArrayList<>();
+        try{
+            String query = "Select contactname from contact"; // assigning our query
+            Cursor cursor = database.rawQuery(query,null); //assigning the result of our query to cursor
+
+            cursor.moveToFirst();        // puts cursor on the first row
+            while(!cursor.isAfterLast()){    // while there is still rows left
+                contactNames.add(cursor.getString(0));     // add string values of column with index zero
+                cursor.moveToNext();   // on to the next
+            }
+            cursor.close();     // close the cursor(release the result set)
+
+        }
+        catch (Exception e){
+            contactNames = new ArrayList<>();
+        }
+        return contactNames;
+    }
+
+
 
 
 }

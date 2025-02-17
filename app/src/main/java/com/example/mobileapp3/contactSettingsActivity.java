@@ -84,7 +84,7 @@ public class contactSettingsActivity extends AppCompatActivity {
         RadioButton rbAscending = findViewById(R.id.radioAscending);
         RadioButton rbDescending = findViewById(R.id.radioDescending);
 
-        if(sortBy.equalsIgnoreCase("ASC")){
+        if(sortOrder.equalsIgnoreCase("ASC")){
             rbAscending.setChecked(true);
         }
         else{

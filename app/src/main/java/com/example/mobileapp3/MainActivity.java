@@ -197,7 +197,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
 
             @Override
             public void afterTextChanged(Editable s) {
-                currentContact.setContactName(etCity.getText().toString());
+                currentContact.setCity(etCity.getText().toString());
             }
         });
 
@@ -215,7 +215,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
 
             @Override
             public void afterTextChanged(Editable s) {
-                currentContact.setContactName(etState.getText().toString());
+                currentContact.setState(etState.getText().toString());
             }
         });
 
@@ -233,7 +233,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
 
             @Override
             public void afterTextChanged(Editable s) {
-                currentContact.setContactName(etZipcode.getText().toString());
+                currentContact.setZipCode(etZipcode.getText().toString());
             }
         });
 
@@ -251,7 +251,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
 
             @Override
             public void afterTextChanged(Editable s) {
-                currentContact.setContactName(etHome.getText().toString());
+                currentContact.setPhoneNumber(etHome.getText().toString());
             }
         });
 
@@ -269,7 +269,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
 
             @Override
             public void afterTextChanged(Editable s) {
-                currentContact.setContactName(etCell.getText().toString());
+                currentContact.setCelllNumber(etCell.getText().toString());
             }
         });
         final EditText etEmail = findViewById(R.id.editEmail);
@@ -286,7 +286,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
 
             @Override
             public void afterTextChanged(Editable s) {
-                currentContact.setContactName(etEmail.getText().toString());
+                currentContact.seteMail(etEmail.getText().toString());
             }
         });
     }
