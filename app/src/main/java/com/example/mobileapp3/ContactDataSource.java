@@ -82,7 +82,7 @@ public class ContactDataSource {
 
     }
 
-    public ArrayList<String> getConatctName(){
+    public ArrayList<String> getContactName(){
         ArrayList<String> contactNames = new ArrayList<>();
         try{
             String query = "Select contactname from contact"; // assigning our query
